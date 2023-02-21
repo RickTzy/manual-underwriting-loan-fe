@@ -10,7 +10,7 @@
 		<div class="collapse navbar-collapse w-auto" id="sidenav-collapse-main">
 			<ul class="navbar-nav" v-if="roleId == 1">
 				<li class="nav-item" v-for="menu in sidebarAdminMenu" v-bind:key="menu.pos">
-					<a class="nav-link active" v-if="menu.pos == 1 && menu.pos == currentPos" @click="changePos(menu.pos)" :href="'/' + menu.link">
+					<a class="nav-link active" v-if="menu.pos == 1 && menu.pos == currentPos" @click="changePos(menu.pos)" :href="'/#/' + menu.link">
 						<div class="icon icon-shape icon-sm shadow border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
 							<svg width="12px" height="12px" viewBox="0 0 45 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 								<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -27,7 +27,7 @@
 						</div>
 						<span class="nav-link-text ms-1">{{menu.name}}</span>
 					</a>
-					<a class="nav-link" v-if="menu.pos == 1 && menu.pos != currentPos" @click="changePos(menu.pos)" :href="'/' + menu.link">
+					<a class="nav-link" v-if="menu.pos == 1 && menu.pos != currentPos" @click="changePos(menu.pos)" :href="'/#/' + menu.link">
 						<div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
 							<svg width="12px" height="12px" viewBox="0 0 45 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 								<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -44,7 +44,7 @@
 						</div>
 						<span class="nav-link-text ms-1">{{menu.name}}</span>
 					</a>
-					<a class="nav-link active" v-if="menu.pos == 2 && menu.pos == currentPos" @click="changePos(menu.pos)" :href="'/' + menu.link">
+					<a class="nav-link active" v-if="menu.pos == 2 && menu.pos == currentPos" @click="changePos(menu.pos)" :href="'/#/' + menu.link">
 						<div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
 							<svg width="12px" height="12px" viewBox="0 0 46 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 								<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -62,7 +62,7 @@
 						</div>
 						<span class="nav-link-text ms-1">{{menu.name}}</span>
 					</a>
-					<a class="nav-link" v-if="menu.pos == 2 && menu.pos != currentPos" @click="changePos(menu.pos)" :href="'/' + menu.link">
+					<a class="nav-link" v-if="menu.pos == 2 && menu.pos != currentPos" @click="changePos(menu.pos)" :href="'/#/' + menu.link">
 						<div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
 							<svg width="12px" height="12px" viewBox="0 0 46 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 								<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -80,7 +80,7 @@
 						</div>
 						<span class="nav-link-text ms-1">{{menu.name}}</span>
 					</a>
-					<a class="nav-link active" v-if="menu.pos == 4 && menu.pos == currentPos" @click="changePos(menu.pos)" :href="'/' + menu.link">
+					<a class="nav-link active" v-if="menu.pos == 4 && menu.pos == currentPos" @click="changePos(menu.pos)" :href="'/#/' + menu.link">
 						<div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
 							<svg width="12px" height="12px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 								<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -97,7 +97,7 @@
 						</div>
 						<span class="nav-link-text ms-1">{{menu.name}}</span>
 					</a>
-					<a class="nav-link" v-if="menu.pos == 4 && menu.pos != currentPos" @click="changePos(menu.pos)" :href="'/' + menu.link">
+					<a class="nav-link" v-if="menu.pos == 4 && menu.pos != currentPos" @click="changePos(menu.pos)" :href="'/#/' + menu.link">
 						<div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
 							<svg width="12px" height="12px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 								<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -114,7 +114,7 @@
 						</div>
 						<span class="nav-link-text ms-1">{{menu.name}}</span>
 					</a>
-					<a class="nav-link active" v-if="menu.pos == 5 && menu.pos == currentPos" @click="changePos(menu.pos)" :href="'/' + menu.link">
+					<a class="nav-link active" v-if="menu.pos == 5 && menu.pos == currentPos" @click="changePos(menu.pos)" :href="'/#/' + menu.link">
 						<div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
 							<svg width="12px" height="20px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 								<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -133,7 +133,7 @@
 						</div>
 						<span class="nav-link-text ms-1">{{menu.name}}</span>
 					</a>
-					<a class="nav-link" v-if="menu.pos == 5 && menu.pos != currentPos" @click="changePos(menu.pos)" :href="'/' + menu.link">
+					<a class="nav-link" v-if="menu.pos == 5 && menu.pos != currentPos" @click="changePos(menu.pos)" :href="'/#/' + menu.link">
 						<div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
 							<svg width="12px" height="20px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 								<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -156,7 +156,7 @@
 			</ul>
 			<ul class="navbar-nav" v-if="roleId != 1">
 				<li class="nav-item" v-for="menu in sidebarUserMenu" v-bind:key="menu.pos">
-					<a class="nav-link active" v-if="menu.pos == 1 && menu.pos == currentPos" @click="changePos(menu.pos)" :href="'/' + menu.link">
+					<a class="nav-link active" v-if="menu.pos == 1 && menu.pos == currentPos" @click="changePos(menu.pos)" :href="'/#/' + menu.link">
 						<div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
 							<svg width="12px" height="12px" viewBox="0 0 45 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 								<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -173,7 +173,7 @@
 						</div>
 						<span class="nav-link-text ms-1">{{menu.name}}</span>
 					</a>
-					<a class="nav-link" v-if="menu.pos == 1 && menu.pos != currentPos" @click="changePos(menu.pos)" :href="'/' + menu.link">
+					<a class="nav-link" v-if="menu.pos == 1 && menu.pos != currentPos" @click="changePos(menu.pos)" :href="'/#/' + menu.link">
 						<div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
 							<svg width="12px" height="12px" viewBox="0 0 45 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 								<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -190,7 +190,7 @@
 						</div>
 						<span class="nav-link-text ms-1">{{menu.name}}</span>
 					</a>
-					<a class="nav-link active" v-if="menu.pos == 2 && menu.pos == currentPos" @click="changePos(menu.pos)" :href="'/' + menu.link">
+					<a class="nav-link active" v-if="menu.pos == 2 && menu.pos == currentPos" @click="changePos(menu.pos)" :href="'/#/' + menu.link">
 						<div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
 							<svg width="12px" height="12px" viewBox="0 0 46 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 								<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -208,7 +208,7 @@
 						</div>
 						<span class="nav-link-text ms-1">{{menu.name}}</span>
 					</a>
-					<a class="nav-link" v-if="menu.pos == 2 && menu.pos != currentPos" @click="changePos(menu.pos)" :href="'/' + menu.link">
+					<a class="nav-link" v-if="menu.pos == 2 && menu.pos != currentPos" @click="changePos(menu.pos)" :href="'/#/' + menu.link">
 						<div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
 							<svg width="12px" height="12px" viewBox="0 0 46 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 								<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -226,7 +226,7 @@
 						</div>
 						<span class="nav-link-text ms-1">{{menu.name}}</span>
 					</a>
-					<a class="nav-link active" v-if="menu.pos == 3 && menu.pos == currentPos" @click="changePos(menu.pos)" :href="'/' + menu.link">
+					<a class="nav-link active" v-if="menu.pos == 3 && menu.pos == currentPos" @click="changePos(menu.pos)" :href="'/#/' + menu.link">
 						<div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
 							<svg width="12px" height="12px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 								<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -243,7 +243,7 @@
 						</div>
 						<span class="nav-link-text ms-1">{{menu.name}}</span>
 					</a>
-					<a class="nav-link" v-if="menu.pos == 3 && menu.pos != currentPos" @click="changePos(menu.pos)" :href="'/' + menu.link">
+					<a class="nav-link" v-if="menu.pos == 3 && menu.pos != currentPos" @click="changePos(menu.pos)" :href="'/#/' + menu.link">
 						<div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
 							<svg width="12px" height="12px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 								<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
