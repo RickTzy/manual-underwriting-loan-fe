@@ -292,9 +292,17 @@ export default {
 		localStorage.setItem('userSession', JSON.stringify(load));
       }
     },
-	 created: function(){
+	created: function(){
         var load = JSON.parse(localStorage.getItem('userSession'));
         this.currentPos = load.pos;
-    }
+    },
+	mounted() {
+		if (localStorage.getItem('reloaded')) {
+			localStorage.removeItem('reloaded');
+		} else {
+			localStorage.setItem('reloaded', '1');
+			location.reload();
+		}
+	}
 }
 </script>
